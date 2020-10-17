@@ -5,12 +5,13 @@ You might be asking, why does anyone need a virtual firewall in the public cloud
 1. A hybrid enterprise with both physical and virtual assests, with centrally managed access control policies.
 2. Virtual workloads that have complex policies that require permissionming via FQDN, URL, publicly or privately maintained lists of IPs or URLs, Automatic applicaiton identification.
 3. Cloud provided network activity logging is insufficient. In the case of PAN VM firewalls the logging can extract URLs from HTTP requests and provide application visibility. 
-4. And importantly - occasionaly circumstances force you to shove brownfield workloads into the cloud. It's an imperfect world. 
+4. And importantly - occasionaly circumstances force you to shove brownfield workloads into the cloud. It's an imperfect world. ¯\_(ツ)_/¯
 
-All that said, deploying a virtual firewall to control network policy is not the only way to solve these problem problems in the cloud. You can, and others wil,l solve these problems in different ways. Some examples of other methods. 
+All that said, deploying a virtual firewall to control network access policy is not the only solution. Other methods include:
 - Web proxies either hosted or cloud based (e.g. Zscaler)
-- Automation tools to orchestrate native cloud tools.
-- Cloud native access rules
+- Cloud access policies
+- Cloud native firewall services
+
 ### Table of content
 [Terraform Plan](#Terraform-plan)<br/>
 [Understanding the VNET topology](#Understanding-the-VNET-topology)<br/>
