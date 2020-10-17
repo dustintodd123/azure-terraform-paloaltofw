@@ -40,16 +40,16 @@ A bit more detail about the specific of the way Azure public IPs and VNICs map t
 
 ### PAN Bootstrap notes
 
-The bootstrap process allowes a newly provisioned PAN VM firewall to register itself with a PAN Panorama mgmt server and have it's device config and polcilies pushed down to it. It's beyond the scope of this document to explain the details of how to create device configs and shared policies in Panorama. But to get the newly booted firewall to register with the Panorama server. 
+The bootstrap process allowes a newly provisioned PAN VM firewall to register itself with a Panorama mgmt server and have it's device config and polcilies pushed down to it. It's beyond the scope of this document to explain the details of how to create device configs and shared policies in Panorama. In this example the goal is to simply register the new firewall with the Panorama server.
 
 1. Create a Azure storage account.
-2. Create a file share in the new storage account named "bootstrap"
-3. In the file share create the following folder structure:
+2. Create a file share in the new storage account named _bootstrap_.
+3. In the _bootstrap_ file share create the following folder structure:
 
 ![Read more words!](docs/storageexplorer.PNG)
 
-4. The only folder and file that is required to populate is the _config\init-cfg.txt_
-5. There are 2 parameters that must be populated in the _ini-cfg.txt_
+4. The only bootstrap folder and file that are required for Panorama registration is _config\init-cfg.txt_.
+5. There are 2 parameters that must be populated in the _init-cfg.txt_.
 ```
    vm-auth-key=1234567890
    panorama-server=1.1.1.1
