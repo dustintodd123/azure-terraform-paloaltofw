@@ -114,7 +114,7 @@ resource "azurerm_network_interface" "FW_VNIC1" {
   }
 }
 
-# Accelerated networking supported by PAN OS image
+# PAN trust VNIC
 resource "azurerm_network_interface" "FW_VNIC2" {
   name                = join("", list(var.prefix, "-fwethernet1_2"))
   location            = azurerm_resource_group.PAN_FW_RG.location
@@ -145,6 +145,8 @@ resource "azurerm_virtual_machine" "PAN_FW_FW" {
   vm_size               = "Standard_D3_v2"
   
   plan {
+    # Using a pay as you go license set to "bundle2"
+    # To use a purchased license change this to "byol"
     name      = "bundle2"
     publisher = "paloaltonetworks"
     product   = "vmseries1"
@@ -153,7 +155,8 @@ resource "azurerm_virtual_machine" "PAN_FW_FW" {
   storage_image_reference {
     publisher = "paloaltonetworks"
     offer     = "vmseries1"
-    # Using a pay as you go license with bundle2
+    # Using a pay as you go license set to "bundle2"
+    # To use a purchased license change this to "byol"
     sku       = "bundle2"
     version   = "Latest"
   }
@@ -168,7 +171,7 @@ resource "azurerm_virtual_machine" "PAN_FW_FW" {
   os_profile {
     computer_name  = var.FirewallVmName
     admin_username = "panzadmins"
-    admin_password = "zipper#@1"
+    admin_password = "<CHANGE ME>"
     # Required to use the Panaroma bootstrap process
     # If you don't plan to use the bootstrap process remove this
     custom_data = join(
@@ -179,8 +182,8 @@ resource "azurerm_virtual_machine" "PAN_FW_FW" {
        # init-cfg must be stored in the "bootstrap" file share in the "config" folder
        # These paramters must be correct for the PAN to download the init-cfg.txt
        # init-cfg.txt requires 2 paramters the panorama IP address and authorization key
-       "storage-account=exampledtgstgacct",
-       "access-key=ZZFMuzor0Du8Q+6gbFDHzmrYsuxWEdW6dfh8iBTIB1gltJejrFPQA6weXJKiZ3JVym4NMTFSbw5GHBN3st/4pg==",
+       "storage-account=<CHANGE ME>",
+       "access-key=<CHANGE ME>",
        "file-share=bootstrap",
        "share-directory=None"
       ],
