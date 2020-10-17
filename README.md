@@ -4,13 +4,13 @@
 You might be asking, why does anyone need a virtual firewall in the public cloud? In the case of Azure you might ask, why Network Security Groups and native logging why do I need a virtual firewall? There are couple possible use cases.
 1. A hybrid enterprise with both physical and virtual assests, with centrally managed access control policies.
 2. Virtual workloads that have complex policies that require permissionming via FQDN, URL, publicly or privately maintained lists of IPs or URLs, Automatic applicaiton identification.
-3. Cloud provided network activity logging is insufficient. In the case of PAN VM firewalls the logging can extract URLs from HTTP requests and provide application visibility. 
+3. VM firewall logging can contain additional detail not found in cloud native logging. For instance, PAN VM firewalls logging can extract URLs from HTTP requests and provide application identification. 
 4. And importantly - occasionaly circumstances force you to shove brownfield workloads into the cloud. It's an imperfect world. ¯\\\_(ツ)\_/¯
 
 All that said, deploying a virtual firewall to control network access policy is not the only solution. Other methods include:
 - Web proxies either hosted or cloud based (e.g. Zscaler)
-- Cloud access policies
-- Cloud native firewall services
+- Cloud native access policies
+- Cloud native firewall services 
 
 ### Table of content
 [Terraform Plan](#Terraform-plan)<br/>
