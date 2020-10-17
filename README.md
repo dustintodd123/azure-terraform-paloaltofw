@@ -1,4 +1,4 @@
- Deploying PAN VM Series firewall with Terraform on Azure
+# Deploying PAN VM Series firewall with Terraform on Azure
 ## Bonus! Panorama Bootstrap via Terraform
 
 You might be asking, why does anyone need a virtual firewall in the public cloud? In the case of Azure you might ask, why Network Security Groups and native logging why do I need a virtual firewall? There are couple possible use cases.
