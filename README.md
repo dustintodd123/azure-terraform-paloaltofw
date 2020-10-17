@@ -61,10 +61,10 @@ The bootstrap process allowes a newly provisioned PAN VM firewall to register it
   - The bootstrap _content_ folder should be populated with threat updates. These can be found in the PAN support portal under [Dynamic Updates](https://support.paloaltonetworks.com/Updates/DynamicUpdates/52078). This allows the firewall to immediatly become operational after the config and policies are pushed down by the Panorama. 
   - The example is configured with a pay-as-you-go license (sku=bundle2), a bring-your-own license can be deployed by switching the sku and plan paramter in the pan.tf to "byol". Also the bootstrap _license_ folder must be populated with a _authcodes_ file that contains the authcode for the firewall being deployed. 
 
-8. Update the init-cfg.txt sample file with your auth key and the panorama server IP address uploqd it to the config folder
-9. The last part of this process is to pass the correct parameters to VM via the TF plan file so the PAN VM will be able to download the init-cfg.txt file. 
+8. Update the _init-cfg.txt_ sample file with your auth key and the panorama server IP address, then upload it to the _config_ folder
+9. The last part of this process is to pass the correct parameters to VM via the TF plan file so the PAN VM will be able to download the _init-cfg.txt_ file. 
   - There are 3 parameters that must be passed in the plan file 1. "storage-account" 2. "access-key 3. "file-share". This is section of the pan.tf file from the repository:
-  ```
+  ```terraform
     os_profile {
     computer_name  = var.FirewallVmName
     admin_username = "yourusername"
