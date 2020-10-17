@@ -28,7 +28,7 @@ If you are interested using VSCODE Azure Terraform instructions are here:
 [Configure the Azure Terraform Visual Studio Code extension](https://docs.microsoft.com/en-us/azure/developer/terraform/configure-vs-code-extension-for-terraform)
 
 ### Understanding the VNET topology
-A close reading of this will reveal that the public subnet, included for VMs hosting a Internet accessible workload, is not sitting on a leg of the virtual firewall. Good catch. Access control for the public subnet is handled by a Network Security Group (NSG). There are two reasons for this. East-West communication between hosts in a app architecture will not benefit much from enhanced capabilties provided by a modern VM firewall. Secondly, it was good opportunity to combine multiple concepts into one example. 
+A close reading of this will reveal that the public subnet, there to host publicly accessible workloads, is not sitting on a leg of the virtual firewall. Access control for the public subnet is handled by a Network Security Group (NSG). East-West communication between hosts in an app architecture cannot gain much from the enhanced access control capabilties of a first rate NGFW. Also, it was good opportunity to combine multiple concepts into one example. 
 
 ![Read more words!](docs/examplenet1.jpg)
 
