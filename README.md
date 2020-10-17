@@ -16,7 +16,7 @@ All that said, deploying a virtual firewall to control network policy is not the
 [Understanding the VNET topology](#Understanding-the-VNET-topology)<br/>
 [Terraform Mechanics](#Terraform-Mechanics)<br/>
 [Understanding the VNET topology](#Understanding-the-VNET-topology)<br/>
-[PAN Bootstrap notes](#PAN-Bootstrap-notes)
+[PAN Bootstrap notes](#PAN-Bootstrap-notes)<br/>
 [References](References)
 ### Terraform plan
 At the most basic level this plan deploys a Azure VNET with ficitonal topology (public and private subnets, etc), along with a single PAN VM series firewall that is provisioned via the PAN [bootstrap]( https://docs.paloaltonetworks.com/vm-series/9-1/vm-series-deployment/bootstrap-the-vm-series-firewall.html) process using a PAN [Panorama](https://www.paloaltonetworks.com/network-security/panorama) central mgmt server. This example can be used without the bootstrap process and Panorama. But exactly no one wants to manage cloud firewalls individually, well at least I don't. All the details of how to automate deployment of configs and polciies via Panorama is beyond the scope of this document. 
