@@ -62,8 +62,7 @@ The bootstrap process allowes a newly provisioned PAN VM firewall to register it
   - The example is configured with a pay-as-you-go license (sku=bundle2), a bring-your-own license can be deployed by switching the sku and plan paramter in the pan.tf to "byol". Also the bootstrap _license_ folder must be populated with a _authcodes_ file that contains the authcode for the firewall being deployed. 
 
 8. Update the _init-cfg.txt_ sample file with your auth key and the panorama server IP address, then upload it to the _config_ folder
-9. The last part of this process is to pass the correct parameters to VM via the TF plan file so the PAN VM will be able to download the _init-cfg.txt_ file. 
-  - There are 3 parameters that must be passed in the plan file 1. "storage-account" 2. "access-key 3. "file-share". This is section of the pan.tf file from the repository:
+9. The last part of this process is to pass the correct parameters to VM via the TF plan file so that the PAN VM will be able to download the _init-cfg.txt_ file. There are 3 parameters that must be passed in the plan file 1. "storage-account" 2. "access-key 3. "file-share". This is section of the pan.tf file from the repository:
   ```terraform
     os_profile {
     computer_name  = var.FirewallVmName
@@ -90,5 +89,6 @@ The bootstrap process allowes a newly provisioned PAN VM firewall to register it
   ### References
   [PaloAltoNetworks/terraform-azurerm-panos-bootstrap](https://github.com/PaloAltoNetworks/terraform-azurerm-panos-bootstrap)
   [Terraform Azure](https://www.terraform.io/docs/providers/azurerm/index.html)
+  
   
   
