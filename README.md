@@ -87,4 +87,6 @@ The bootstrap process allowes a newly provisioned PAN VM firewall to register it
   
   ### References
   [PaloAltoNetworks/terraform-azurerm-panos-bootstrap](https://github.com/PaloAltoNetworks/terraform-azurerm-panos-bootstrap)
+  [Terraform Azure](https://www.terraform.io/docs/providers/azurerm/index.html)
+  
   
