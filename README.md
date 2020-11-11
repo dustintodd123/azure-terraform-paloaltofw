@@ -4,7 +4,7 @@ Is it time to delete your virtual firewall?
 
 Table of contents
 -----------------
-[The Great Debate](#The-Great-Debate)<br/>
+[The Cloud Firewall Debate](#The-Cloud-Firewall-Debate)<br/>
 [Terraform Plan](#Terraform-plan)<br/>
 [Terraform Mechanics](#Terraform-Mechanics)<br/>
 [Understanding the VNET topology](#Understanding-the-VNET-topology)<br/>
@@ -14,7 +14,7 @@ Table of contents
 
 
 
-The Great Debate 
+The Cloud Firewall Debate 
 ------------------------------------------------------------------------
 #### Cloud native ACL vs. VM Firewall vs. Secure Web Gateway
 
