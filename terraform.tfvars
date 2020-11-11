@@ -1,0 +1,5 @@
+FirewallDnsName = "examplefw"
+FirewallVmName = "examplefw"
+StorageAccountName = "examplefwstgacct"
+location = "southcentralus"
+prefix = "example"

@@ -1,0 +1,3 @@
+The bootstrap.xml firewall config file has a local admin account pre-configured. Ensure this is changed from the pre-configured defaults. 
+Username: panzadmins
+Password: panuser!0!
