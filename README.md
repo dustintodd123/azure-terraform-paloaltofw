@@ -13,7 +13,7 @@ Table of contents
 [Understanding the VNET topology](#Understanding-the-VNET-topology)<br/>
 [PAN Bootstrap notes](#PAN-Bootstrap-notes)<br/>
 [Etc](#Etc)<br/>
-[References](#References)
+[References](#References)<br/>
 [Q&A](https://github.com/dustintodd123/azure-terraform-paloaltofw/discussions)
 
 
