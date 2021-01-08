@@ -2,7 +2,8 @@ Is it time to delete your virtual firewall?
 ========================================================
 ### Deploying PAN VM Series firewall with Terraform on Azure
 
-!! Check out the new Discussion forum. A much better way to asks questions than opening an issue. [Discussion Forum](https://github.com/dustintodd123/azure-terraform-paloaltofw/discussions)
+!! Check out the new [Discussion Forum](https://github.com/dustintodd123/azure-terraform-paloaltofw/discussions)
+. A much better way to asks questions than opening an issue. 
 
 Table of contents
 -----------------
