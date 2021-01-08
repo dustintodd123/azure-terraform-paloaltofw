@@ -24,7 +24,7 @@ The Cloud Firewall Debate
 _(if you want to skip the debate --> [here](#Terraform-plan) )_
 
 Cloud-native network access controls are maturing. Eventually, this debate will be long dead. In the near-term, we are likely to keep using virtual machine based firewalls in public cloud infrastructure. Let's start by reviewing some of the use cases where VM firewalls beat out their cloud-native cousins. 
-1. Hybrid deployments in which both premise and public cloud workloads function together in a blended architecture. Typically these deployments will have central management capabilities utilizing sharted objects and policies. 
+1. Hybrid deployments in which both premise and public cloud workloads function together in a blended architecture. Typically these deployments will have central management capabilities utilizing shared objects and policies. 
 2. Use of access control policies that require the use of dynamically resolved FQDNs, URLs, publicly or privately maintained dynamic IP or URL lists, and applications.
 3. VM firewall logging capabilities often includes additional detail not found in cloud-native logging. For instance, PAN VM firewalls logging can extract URLs from HTTP requests and provide application identification.
 4. And not to be forgotten, circumstances sometimes force the wholesale migration of brownfield workloads into the cloud with little to no modification. It's an imperfect world. ¯\_(ツ)_/¯
