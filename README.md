@@ -14,7 +14,7 @@ Table of contents
 [PAN Bootstrap notes](#PAN-Bootstrap-notes)<br/>
 [Etc](#Etc)<br/>
 [References](#References)
-
+[Q&A](https://github.com/dustintodd123/azure-terraform-paloaltofw/discussions)
 
 
 The Cloud Firewall Debate 
